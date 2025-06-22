@@ -3,7 +3,7 @@
 // import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState } from 'react';
 import './App.css'
-import TodoHeading from './components/todoHeading';
+import TodoHeading from './components/TodoHeading';
 import TodoItems from './components/TodoItems';
 
 function App() {
