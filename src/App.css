@@ -1,0 +1,137 @@
+/* Centered container with glass-like effect */
+.container {
+  background-color: rgba(255, 255, 255, 0.25);
+  height: auto; /* let content determine height */
+  width: 90%;
+  max-width: 500px;
+  margin: 100px auto;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading style */
+.todoHeading {
+  font-size: 40px;
+  color: white;
+  font-family: cursive;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Container for input + todos */
+.todoContainer {
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: rgb(243, 24, 97);
+}
+
+/* Parent wrapper for input + button */
+.inputWrapper {
+  display: flex;
+  width: 100%;
+  gap: 10px; /* Space between input and button */
+  margin-bottom: 20px;
+}
+
+/* Input field: 70% of space */
+.inputWrapper input {
+  flex: 7; /* 70% */
+  height: 50px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: rgb(249, 246, 143);
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  box-sizing: border-box;
+  color: black;
+}
+
+/* Save/Update button: 30% of space */
+.inputWrapper button {
+  flex: 3; /* 30% */
+  height: 50px;
+  background-color: rgb(217, 186, 251);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-family: cursive;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Optional: Button hover effect */
+.inputWrapper button:hover {
+  background-color: rgb(145, 93, 153);
+}
+
+
+/* Container for todo items */
+.todoItems {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Individual todo item */
+.Items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 208, 246);
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+
+/* Buttons wrapper */
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Edit/Delete button */
+.buttons button {
+  background-color: rgb(18, 208, 199);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 12px;
+  font-family: cursive;
+  cursor: pointer;
+  font-size: 16px;
+}
+ .buttons button:hover {
+  background-color: rgb(69, 163, 155);
+}
+
+/* Responsive fix (optional) */
+@media (max-width: 600px) {
+  .container {
+    width: 95%;
+  }
+
+  #doneButton {
+    font-size: 18px;
+    width:100%;
+  }
+
+  .buttons button {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+   .buttons button:hover {
+  background-color: rgb(62, 181, 159);
+}
+
+
+
+}
